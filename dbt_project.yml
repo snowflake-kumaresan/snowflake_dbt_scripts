@@ -40,3 +40,9 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    data_sharing:
+      +materialized: view
+      +secure: true
+    gold_layer:
+      +materialized: table
+      +transient: false

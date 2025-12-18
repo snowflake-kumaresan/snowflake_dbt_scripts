@@ -1,0 +1,11 @@
+{{
+    config(
+        materialized='table',
+        transient= false
+    )
+}}
+select current_database() as c_database, 
+       current_schema() as c_schema,
+       current_warehouse() as c_wh,
+       current_user() as c_user,
+       current_role() as c_role

@@ -1,0 +1,13 @@
+sources:
+  - name: dbt_learn_source
+    database: LEARN_DBT_DB
+    schema: LEARN_DBT_SC
+    tables:
+      - name: CUSTOMER
+
+  - name: TPCH_source
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: ORDERS
+      - name: CUSTOMER
